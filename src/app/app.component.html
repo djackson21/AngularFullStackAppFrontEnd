@@ -1,14 +1,15 @@
 <div class="page-wrapper">
-  
+
   <!-- MENU SIDEBAR-->
   <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
       <a routerLink="/products">
-        <img src="assets/images/logo.png"alt="luv2shop"class="img-responsive"/>
+        <img src="assets/images/logo.png" alt="luv2shop" class="img-responsive">
       </a>
     </div>
-    <!-- Menu Component -->
+
     <app-product-category-menu></app-product-category-menu>
+
   </aside>
   <!-- END MENU SIDEBAR-->
 
@@ -20,7 +21,9 @@
           <div class="header-wrap">
 
             <app-search></app-search>
-
+ 
+            <app-login-status></app-login-status>
+            
             <app-cart-status></app-cart-status>
 
           </div>
@@ -31,13 +34,12 @@
     <!-- END HEADER DESKTOP-->
 
     <!-- MAIN CONTENT-->
-
     <router-outlet></router-outlet>
 
   </div>
 </div>
 
-<!-- END PAGE CONTAINER-->
+<!-- ENDS PAGE CONTAINER -->
 
 <footer>
   <ul>
